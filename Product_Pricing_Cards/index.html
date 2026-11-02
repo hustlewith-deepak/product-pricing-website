@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plans</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="pricing-section">
+
+        <div class="heading">
+            <span class="tag">SIMPLE PRICING</span>
+            <h1>Choose Your Perfect Plan</h1>
+            <p>Flexible plans designed to grow with you.</p>
+        </div>
+
+        <!-- Billing Toggle -->
+        <div class="billing">
+            <span class="billing-label active" id="monthly-label">Monthly</span>
+
+            <button class="toggle" id="billing-toggle"
+                    type="button" aria-label="Switch billing cycle"
+                    aria-pressed="false">
+                <span class="toggle-circle"></span>
+            </button>
+
+            <span class="billing-label" id="yearly-label">Yearly</span>
+            <span class="discount">Save 20%</span>
+        </div>
+
+        <!-- Pricing Cards -->
+        <div class="pricing-container">
+
+            <!-- Basic Plan -->
+            <article class="pricing-card">
+
+                <div class="plan-info">
+                    <h2>Basic</h2>
+                    <p>Perfect for getting started.</p>
+                </div>
+
+                <div class="price">
+                    <span class="currency">₹</span>
+                    <span class="amount"
+                          data-monthly="499"
+                          data-yearly="399">499</span>
+                    <span class="period">/month</span>
+                </div>
+
+                <button class="plan-button" type="button">
+                    Get Started
+                </button>
+
+                <div class="features">
+                    <p>✓ 1 Project</p>
+                    <p>✓ Basic Support</p>
+                    <p>✓ 5 GB Storage</p>
+                    <p>✓ Basic Analytics</p>
+                </div>
+            </article>
+
+            <!-- Professional Plan -->
+            <article class="pricing-card popular">
+
+                <div class="ribbon">POPULAR</div>
+
+                <div class="plan-info">
+                    <h2>Professional</h2>
+                    <p>For growing businesses.</p>
+                </div>
+
+                <div class="price">
+                    <span class="currency">₹</span>
+                    <span class="amount"
+                          data-monthly="999"
+                          data-yearly="799">999</span>
+                    <span class="period">/month</span>
+                </div>
+
+                <button class="plan-button primary" type="button">
+                    Choose Professional
+                </button>
+
+                <div class="features">
+                    <p>✓ 10 Projects</p>
+                    <p>✓ Priority Support</p>
+                    <p>✓ 50 GB Storage</p>
+                    <p>✓ Advanced Analytics</p>
+                </div>
+            </article>
+
+            <!-- Enterprise Plan -->
+            <article class="pricing-card">
+
+                <div class="ribbon best-value">BEST VALUE</div>
+
+                <div class="plan-info">
+                    <h2>Enterprise</h2>
+                    <p>For teams and large projects.</p>
+                </div>
+
+                <div class="price">
+                    <span class="currency">₹</span>
+                    <span class="amount"
+                          data-monthly="1999"
+                          data-yearly="1599">1999</span>
+                    <span class="period">/month</span>
+                </div>
+
+                <button class="plan-button" type="button">
+                    Contact Sales
+                </button>
+
+                <div class="features">
+                    <p>✓ Unlimited Projects</p>
+                    <p>✓ 24/7 Support</p>
+                    <p>✓ 200 GB Storage</p>
+                    <p>✓ Custom Analytics</p>
+                </div>
+            </article>
+
+        </div>
+
+        <p class="footer-text">
+            All plans include a 7-day free trial. No hidden charges.
+        </p>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
